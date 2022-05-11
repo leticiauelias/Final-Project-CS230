@@ -7,12 +7,12 @@ I have not copied the code from a student or any source.
 I have not given my code to any student.
 """
 
+import webbrowser as web
 import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import pydeck as pdk
-import webbrowser as web
 
 
 def read_data():
