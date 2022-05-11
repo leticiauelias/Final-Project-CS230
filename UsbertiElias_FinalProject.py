@@ -7,7 +7,6 @@ I have not copied the code from a student or any source.
 I have not given my code to any student.
 """
 
-import webbrowser as web
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -229,19 +228,13 @@ elif selected_option == options[6]:
 elif selected_option == options[7]:
     st.write("Here are a few links if you need help reporting a crime in Boston:")
 
-    if st.button("Safety Tips"):
-        web.open_new_tab('https://bpdnews.com/tips/')
+    st.write("Safety Tips: https://bpdnews.com/tips/")
 
-    elif st.button("Emergency 911"):
-        web.open_new_tab('https://bpdnews.com/emergency-911/')
+    st.write("Emergency 911: https://bpdnews.com/emergency-911/")
 
-    elif st.button("Boston's Most Wanted List"):
-        web.open_new_tab('https://bpdnews.com/most-wanted/')
+    st.write("Boston's Most Wanted List: https://bpdnews.com/most-wanted/")
 
-    elif st.button("Boston's Police Departments "):
-        web.open_new_tab('https://bpdnews.com/districts')
+    st.write("Boston's Police Departments: https://bpdnews.com/districts")
 
-    elif st.button("Bentley Campus Security Report"):
-        web.open_new_tab('https://www.bentley.edu/files/pdf/Final_ASR.pdf')
-        
-
+    st.write("Bentley Campus Security Report: https://www.bentley.edu/files/pdf/Final_ASR.pdf")
+       
