@@ -241,3 +241,7 @@ elif selected_option == options[7]:
     elif st.button("Boston's Police Departments "):
         web.open_new_tab('https://bpdnews.com/districts')
 
+    elif st.button("Bentley Campus Security Report"):
+        web.open_new_tab('https://www.bentley.edu/files/pdf/Final_ASR.pdf')
+        
+
