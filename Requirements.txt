@@ -1,4 +1,4 @@
-pandas==1.0.3
-streamlit==0.60.0
-matplotlib==3.5.1
-pydeck==0.7.1
+pandas == 1.4.2
+streamlit == 1.8.1
+matplotlib == 3.5.2
+pydeck == 0.7.1
