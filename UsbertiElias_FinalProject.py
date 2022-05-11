@@ -6,13 +6,13 @@ I pledge that I have completed the programming assignment independently.
 I have not copied the code from a student or any source.
 I have not given my code to any student.
 """
-import webbrowser
 
 import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import pydeck as pdk
+import webbrowser as web
 
 
 def read_data():
@@ -229,14 +229,15 @@ elif selected_option == options[6]:
 elif selected_option == options[7]:
     st.write("Here are a few links if you need help reporting a crime in Boston:")
 
-    st.write("Safety Tips: https://bpdnews.com/tips/")
+    if st.button("Safety Tips"):
+        web.open_new_tab('https://bpdnews.com/tips/')
 
-    st.write("Emergency 911: https://bpdnews.com/emergency-911/")
+    elif st.button("Emergency 911"):
+        web.open_new_tab('https://bpdnews.com/emergency-911/')
 
-    st.write("Boston's Most Wanted List: https://bpdnews.com/most-wanted/")
+    elif st.button("Boston's Most Wanted List"):
+        web.open_new_tab('https://bpdnews.com/most-wanted/')
 
-    st.write("Boston's Police Departments: https://bpdnews.com/districts")
-
-    st.write("Bentley Campus Security Report: https://www.bentley.edu/files/pdf/Final_ASR.pdf")
-
+    elif st.button("Boston's Police Departments "):
+        web.open_new_tab('https://bpdnews.com/districts')
 
